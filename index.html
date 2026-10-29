@@ -78,6 +78,24 @@
   ]
 }
 </script>
+<style id="kiki-nav-priority">
+@media(min-width:1181px){.nav-dup{display:none!important}}
+@media(max-width:1180px){.nav-top{display:none!important}}
+.nav-dropdown:focus-within .nav-dropdown-menu{opacity:1;pointer-events:auto;transform:translateX(-50%) translateY(0)}
+#site-header a:focus-visible,#site-header button:focus-visible,#mobile-menu a:focus-visible,footer a:focus-visible,.quick-links a:focus-visible{outline:2px solid #7fae72;outline-offset:3px}
+.ft-guides{max-width:1180px;margin:40px auto 0;padding-top:24px;border-top:1px solid #1a1a1a}
+.ft-guides-h{margin:0 0 14px;font-size:11px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.62)}
+.ft-guides-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:18px 32px}
+.ft-guides-sub{margin:0 0 6px;font-size:11px;letter-spacing:.06em;color:rgba(255,255,255,.62)}
+.ft-guides a{display:block;padding:4px 0;font-size:12.5px;line-height:1.5;color:rgba(255,255,255,.62);text-decoration:none}
+.ft-guides a:hover{color:#fff;text-decoration:underline}
+</style>
+<style id="kiki-quick-links">
+.quick-links{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:6px}
+.quick-links a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border:1px solid rgba(255,255,255,.45);border-radius:1px;background:rgba(0,0,0,.35);color:#fff;text-decoration:none;font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;transition:border-color .2s,background .2s}
+.quick-links a:hover{border-color:#fff;background:rgba(0,0,0,.6)}
+@media(max-width:560px){.quick-links{display:grid;grid-template-columns:1fr 1fr;width:100%;max-width:360px}.quick-links a{padding:0 10px;font-size:11px;letter-spacing:.12em}}
+</style>
 </head>
 <body>
 
@@ -92,20 +110,21 @@
     <img id="header-logo" src="uploads/Kiki-Logo.svg" alt="Kiki Kafe" style="height:72px; width:auto; display:block;">
   </a>
   <nav style="display:flex; align-items:center; gap:32px;">
-    <div data-nav-text style="display:flex; align-items:center; gap:42px;">
-      <a href="#location" class="nav-link" style="text-decoration:none; font-size:11px; font-weight:500; letter-spacing:.22em; text-transform:uppercase;">Contact</a>
+    <div data-nav-text style="display:flex; align-items:center; gap:36px;">
+      <a href="/menu" class="nav-link nav-top" style="text-decoration:none; font-size:11px; font-weight:500; letter-spacing:.22em; text-transform:uppercase;">Menu</a>
+      <a href="/kiki-kart-coffee-cart-catering" class="nav-link nav-top" style="text-decoration:none; font-size:11px; font-weight:500; letter-spacing:.22em; text-transform:uppercase;">Kiki Kart</a>
+      <a href="/apply" class="nav-link nav-top" style="text-decoration:none; font-size:11px; font-weight:500; letter-spacing:.22em; text-transform:uppercase;">Apply</a>
+      <a href="/#location" class="nav-link" style="text-decoration:none; font-size:11px; font-weight:500; letter-spacing:.22em; text-transform:uppercase;">Contact</a>
       <div class="nav-dropdown">
         <button class="nav-dropdown-trigger">More <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
         <div class="nav-dropdown-menu">
-          <a href="menu" class="nav-dropdown-item">Menu</a>
-          <a href="book-kart.html" class="nav-dropdown-item">Book Kiki Kart</a>
-          <a href="macomb-county" class="nav-dropdown-item">Macomb County</a>
-          <a href="oakland-county" class="nav-dropdown-item">Oakland County</a>
-          <a href="kiki-kart-coffee-cart-catering" class="nav-dropdown-item">Kiki Kart Catering</a>
-          <a href="best-cafe-in-michigan" class="nav-dropdown-item">Best Café in Michigan</a>
-          <a href="best-coffee-cart-in-michigan" class="nav-dropdown-item">Best Coffee Cart in MI</a>
-          <a href="franchise.html" class="nav-dropdown-item">Franchise</a>
-          <a href="apply.html" class="nav-dropdown-item">Apply</a>
+          <a href="/menu" class="nav-dropdown-item nav-dup">Menu</a>
+          <a href="/kiki-kart-coffee-cart-catering" class="nav-dropdown-item nav-dup">Kiki Kart</a>
+          <a href="/book-kart" class="nav-dropdown-item">Book Kiki Kart</a>
+          <a href="/apply" class="nav-dropdown-item nav-dup">Apply</a>
+          <a href="/franchise" class="nav-dropdown-item">Franchise</a>
+          <a href="/best-cafe-in-michigan" class="nav-dropdown-item">Best Café in Michigan</a>
+          <a href="/best-coffee-cart-in-michigan" class="nav-dropdown-item">Best Coffee Cart in MI</a>
         </div>
       </div>
     </div>
@@ -141,6 +160,12 @@
     <div style="display:flex; flex-direction:column; align-items:center; gap:14px; margin-top:14px;">
       <a href="https://order.online/store/-35180447?hideModal=true" target="_blank" rel="noopener" class="btn-primary" style="text-decoration:none; min-width:200px; text-align:center; background:#4d8145; color:#000; font-weight:500; font-size:15px; letter-spacing:.14em; text-transform:uppercase; padding:20px 56px; border:1px solid #4d8145; border-radius:1px;">Order Now</a>
     </div>
+    <nav class="quick-links" aria-label="Quick links">
+      <a href="/menu">See the Menu</a>
+      <a href="/book-kart">Book Kiki Kart</a>
+      <a href="/apply">Apply to Work Here</a>
+      <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Kiki+Kaf%C3%A9,+17370+Hall+Rd+Ste+107,+Clinton+Township,+MI+48038" target="_blank" rel="noopener">Directions</a>
+    </nav>
   </div>
   <div style="position:absolute; bottom:0; left:0; right:0; height:35%; background:linear-gradient(to bottom, transparent, #000); z-index:1; pointer-events:none;"></div>
   <div style="position:absolute; bottom:15px; left:50%; transform:translateX(-50%); color:rgba(255,255,255,.3); z-index:2;">
@@ -171,7 +196,7 @@
   </div>
   <div class="aw-grid">
     <article class="aw-card reveal">
-      <span class="aw-badge"><a href="https://townanswer.com/best-coffee-shop-matcha-michigan/" rel="nofollow" title="Certified TownAnswer Best 2026: Best Café in Michigan"><img src="https://townanswer.com/badge/2026/kiki-kafe.svg" alt="Certified TownAnswer Best 2026: Best Café in Michigan" width="367" height="120" loading="lazy" decoding="async"></a></span>
+      <span class="aw-badge"><a href="https://townanswer.com/best-coffee-shop-macomb-county/" rel="nofollow" title="Certified TownAnswer Best 2026: Best Coffee Shop in Macomb County"><img src="https://townanswer.com/badge/2026/kiki-kafe.svg" alt="Certified TownAnswer Best 2026: Best Coffee Shop in Macomb County, Kiki Kafé" width="367" height="120" loading="lazy" decoding="async"></a></span>
       <div class="aw-rank">#1<small>of 2,898 cafés</small></div>
       <h3>Best Café in Michigan 2026</h3>
       <p>TownAnswer scored Kiki Kafé 88 out of 100, the highest of any Michigan café with 25 or more Google reviews.</p>
@@ -525,19 +550,13 @@
       </div>
     </div>
     <div class="ftr-links" style="display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:14px 32px; align-content:start;">
-      <a href="menu" class="footer-nav-link" style="text-decoration:none; font-size:12px; font-weight:400; letter-spacing:.14em; text-transform:uppercase; color:rgba(255,255,255,.6);">Menu</a>
-      <a href="book-kart.html" class="footer-nav-link" style="text-decoration:none; font-size:12px; font-weight:400; letter-spacing:.14em; text-transform:uppercase; color:rgba(255,255,255,.6);">Book the Kart</a>
-      <a href="macomb-county" class="footer-nav-link" style="text-decoration:none; font-size:12px; font-weight:400; letter-spacing:.14em; text-transform:uppercase; color:rgba(255,255,255,.6);">Macomb County</a>
-      <a href="oakland-county" class="footer-nav-link" style="text-decoration:none; font-size:12px; font-weight:400; letter-spacing:.14em; text-transform:uppercase; color:rgba(255,255,255,.6);">Oakland County</a>
-      <a href="kiki-kart-coffee-cart-catering" class="footer-nav-link" style="text-decoration:none; font-size:12px; font-weight:400; letter-spacing:.14em; text-transform:uppercase; color:rgba(255,255,255,.6);">Kiki Kart Catering</a>
-      <a href="best-cafes-macomb-county" class="footer-nav-link" style="text-decoration:none; font-size:12px; font-weight:400; letter-spacing:.14em; text-transform:uppercase; color:rgba(255,255,255,.6);">Best Cafés: Macomb</a>
-      <a href="best-cafes-oakland-county" class="footer-nav-link" style="text-decoration:none; font-size:12px; font-weight:400; letter-spacing:.14em; text-transform:uppercase; color:rgba(255,255,255,.6);">Best Cafés: Oakland</a>
-      <a href="best-cafe-in-michigan" class="footer-nav-link" style="text-decoration:none; font-size:12px; font-weight:400; letter-spacing:.14em; text-transform:uppercase; color:rgba(255,255,255,.6);">Best Café in Michigan</a>
-      <a href="best-coffee-cart-in-michigan" class="footer-nav-link" style="text-decoration:none; font-size:12px; font-weight:400; letter-spacing:.14em; text-transform:uppercase; color:rgba(255,255,255,.6);">Best Coffee Cart in MI</a>
-      <a href="#location" class="footer-nav-link" style="text-decoration:none; font-size:12px; font-weight:400; letter-spacing:.14em; text-transform:uppercase; color:rgba(255,255,255,.6);">Location</a>
-      <a href="apply.html" class="footer-nav-link" style="text-decoration:none; font-size:12px; font-weight:400; letter-spacing:.14em; text-transform:uppercase; color:rgba(255,255,255,.6);">Apply</a>
-      <a href="franchise.html" class="footer-nav-link" style="text-decoration:none; font-size:12px; font-weight:400; letter-spacing:.14em; text-transform:uppercase; color:rgba(255,255,255,.6);">Franchise</a>
-      <a href="privacy.html" class="footer-nav-link" style="text-decoration:none; font-size:12px; font-weight:400; letter-spacing:.14em; text-transform:uppercase; color:rgba(255,255,255,.6);">Privacy Policy</a>
+      <a href="/menu" class="footer-nav-link" style="text-decoration:none; font-size:12px; font-weight:400; letter-spacing:.14em; text-transform:uppercase; color:rgba(255,255,255,.6);">Menu</a>
+      <a href="/kiki-kart-coffee-cart-catering" class="footer-nav-link" style="text-decoration:none; font-size:12px; font-weight:400; letter-spacing:.14em; text-transform:uppercase; color:rgba(255,255,255,.6);">Kiki Kart</a>
+      <a href="/book-kart" class="footer-nav-link" style="text-decoration:none; font-size:12px; font-weight:400; letter-spacing:.14em; text-transform:uppercase; color:rgba(255,255,255,.6);">Book the Kart</a>
+      <a href="/apply" class="footer-nav-link" style="text-decoration:none; font-size:12px; font-weight:400; letter-spacing:.14em; text-transform:uppercase; color:rgba(255,255,255,.6);">Apply</a>
+      <a href="/franchise" class="footer-nav-link" style="text-decoration:none; font-size:12px; font-weight:400; letter-spacing:.14em; text-transform:uppercase; color:rgba(255,255,255,.6);">Franchise</a>
+      <a href="/#location" class="footer-nav-link" style="text-decoration:none; font-size:12px; font-weight:400; letter-spacing:.14em; text-transform:uppercase; color:rgba(255,255,255,.6);">Location</a>
+      <a href="/privacy" class="footer-nav-link" style="text-decoration:none; font-size:12px; font-weight:400; letter-spacing:.14em; text-transform:uppercase; color:rgba(255,255,255,.6);">Privacy Policy</a>
       <a href="https://order.online/store/-35180447?hideModal=true" target="_blank" rel="noopener" class="footer-order-link" style="text-decoration:none; font-size:12px; font-weight:500; letter-spacing:.14em; text-transform:uppercase; color:#4d8145;">Order Online</a>
     </div>
     <div style="display:flex; flex-direction:column; gap:10px;">
@@ -547,10 +566,19 @@
       <button onclick="document.getElementById('contact-modal').style.display='flex'; document.body.style.overflow='hidden';" class="btn-footer-contact" style="font-family:'Inter',sans-serif; font-weight:500; font-size:11px; letter-spacing:.18em; text-transform:uppercase; padding:10px 20px; border:1px solid rgba(255,255,255,.2); border-radius:1px; color:rgba(255,255,255,.6); background:transparent; cursor:pointer; align-self:flex-start; margin-top:4px;">Contact Us</button>
     </div>
   </div>
+  <nav class="ft-guides" aria-label="Guides">
+    <p class="ft-guides-h">Guides</p>
+    <div class="ft-guides-grid">
+      <div><p class="ft-guides-sub">Eat &amp; drink</p><a href="/breakfast-clinton-township">Breakfast</a><a href="/brunch-clinton-township">Brunch</a><a href="/sandwiches-lunch-clinton-township">Lunch &amp; sandwiches</a><a href="/smoothies-acai-clinton-township">Açaí &amp; smoothies</a><a href="/bakery-clinton-township">Bakery</a><a href="/desserts-clinton-township">Desserts</a><a href="/cookies-clinton-township">Cookies</a><a href="/matcha-clinton-township">Matcha</a></div>
+      <div><p class="ft-guides-sub">Near you</p><a href="/macomb-county">Macomb County</a><a href="/oakland-county">Oakland County</a><a href="/best-cafes-macomb-county">Best cafés: Macomb</a><a href="/best-cafes-oakland-county">Best cafés: Oakland</a><a href="/coffee-brunch-near-royal-oak">Near Royal Oak</a><a href="/coffee-brunch-near-troy">Near Troy</a><a href="/coffee-brunch-near-rochester">Near Rochester</a><a href="/coffee-brunch-near-lake-orion">Near Lake Orion</a></div>
+      <div><p class="ft-guides-sub">Coffee cart catering</p><a href="/coffee-cart-catering-macomb-county">Macomb County</a><a href="/coffee-cart-catering-troy-mi">Troy</a><a href="/coffee-cart-catering-rochester-hills-mi">Rochester Hills</a><a href="/coffee-cart-catering-bloomfield-hills-mi">Bloomfield Hills</a></div>
+      <div><p class="ft-guides-sub">Awards</p><a href="/best-cafe-in-michigan">Best Café in Michigan</a><a href="/best-coffee-cart-in-michigan">Best Coffee Cart in MI</a></div>
+    </div>
+  </nav>
   <div style="max-width:1180px; margin:48px auto 0; padding-top:28px; border-top:1px solid #1a1a1a; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:18px 28px;">
     <span style="font-size:11px; font-weight:500; letter-spacing:.24em; text-transform:uppercase; color:rgba(255,255,255,.45);">2026 TownAnswer Awards</span>
     <div style="display:flex; flex-wrap:wrap; gap:14px;">
-      <a href="https://townanswer.com/best-coffee-shop-matcha-michigan/" rel="nofollow" title="Certified TownAnswer Best 2026: Best Café in Michigan" style="display:inline-flex; border-radius:12px; overflow:hidden;"><img src="https://townanswer.com/badge/2026/kiki-kafe.svg" alt="Certified TownAnswer Best 2026: Best Café in Michigan" width="367" height="120" loading="lazy" decoding="async" style="display:block; width:220px; height:auto;"></a>
+      <a href="https://townanswer.com/best-coffee-shop-macomb-county/" rel="nofollow" title="Certified TownAnswer Best 2026: Best Coffee Shop in Macomb County" style="display:inline-flex; border-radius:12px; overflow:hidden;"><img src="https://townanswer.com/badge/2026/kiki-kafe.svg" alt="Certified TownAnswer Best 2026: Best Coffee Shop in Macomb County, Kiki Kafé" width="367" height="120" loading="lazy" decoding="async" style="display:block; width:220px; height:auto;"></a>
       <a href="https://townanswer.com/best-coffee-cart-michigan/" rel="nofollow" title="Certified TownAnswer Best 2026: Best Coffee Cart Vendor in Michigan" style="display:inline-flex; border-radius:12px; overflow:hidden;"><img src="https://townanswer.com/badge/2026/kiki-kart.svg" alt="Certified TownAnswer Best 2026: Best Coffee Cart Vendor in Michigan" width="377" height="120" loading="lazy" decoding="async" style="display:block; width:226px; height:auto;"></a>
     </div>
   </div>
@@ -609,16 +637,14 @@
     <button class="hamburger open" id="mobile-close" aria-label="Close menu"><span></span><span></span><span></span></button>
   </div>
   <nav>
-    <a href="menu" class="mobile-nav-link">Menu</a>
-    <a href="#location" class="mobile-nav-link">Contact</a>
-    <a href="book-kart.html" class="mobile-nav-link">Book Kiki Kart</a>
-    <a href="macomb-county" class="mobile-nav-link">Macomb County</a>
-    <a href="oakland-county" class="mobile-nav-link">Oakland County</a>
-    <a href="kiki-kart-coffee-cart-catering" class="mobile-nav-link">Kiki Kart Catering</a>
-    <a href="best-cafe-in-michigan" class="mobile-nav-link">Best Café in Michigan</a>
-    <a href="best-coffee-cart-in-michigan" class="mobile-nav-link">Best Coffee Cart in MI</a>
-    <a href="franchise.html" class="mobile-nav-link">Franchise</a>
-    <a href="apply.html" class="mobile-nav-link">Apply</a>
+    <a href="/menu" class="mobile-nav-link">Menu</a>
+    <a href="/kiki-kart-coffee-cart-catering" class="mobile-nav-link">Kiki Kart</a>
+    <a href="/book-kart" class="mobile-nav-link">Book Kiki Kart</a>
+    <a href="/apply" class="mobile-nav-link">Apply</a>
+    <a href="/#location" class="mobile-nav-link">Contact</a>
+    <a href="/franchise" class="mobile-nav-link">Franchise</a>
+    <a href="/best-cafe-in-michigan" class="mobile-nav-link">Best Café in Michigan</a>
+    <a href="/best-coffee-cart-in-michigan" class="mobile-nav-link">Best Coffee Cart in MI</a>
   </nav>
   <div style="margin-top:40px; display:flex; flex-direction:column; gap:24px;">
     <div style="display:flex; gap:14px;">
