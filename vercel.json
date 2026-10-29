@@ -1,3 +1,6 @@
 {
-  "cleanUrls": true
+  "cleanUrls": true,
+  "redirects": [
+    { "source": "/best-cafe-in-michigan", "destination": "/best-coffee-shop-macomb-county", "permanent": true }
+  ]
 }
