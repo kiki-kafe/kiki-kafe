@@ -10,7 +10,7 @@ html { scroll-behavior: smooth; }
 /* Hours banner */
 #hours-banner { position: fixed; top: 0; left: 0; right: 0; z-index: 101; height: 34px; background: #111; border-bottom: 1px solid #1e1e1e; display: flex; align-items: center; justify-content: center; }
 #hours-banner p { margin: 0; font-size: 11px; font-weight: 400; letter-spacing: .08em; color: rgba(255,255,255,.6); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding: 0 16px; }
-#hours-banner .banner-hours { color: #4d8145; }
+#hours-banner .banner-hours { color: #7fae72; }
 @media (max-width: 560px) { .banner-loc { display: none; } }
 *, *::before, *::after { box-sizing: border-box; }
 body { margin: 0; background: #000; color: #fff; font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; overflow-x: hidden; -webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: transparent; }

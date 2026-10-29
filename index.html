@@ -149,8 +149,9 @@
 
 <!-- ===== HERO ===== -->
 <section id="top" style="position:relative; min-height:100vh; display:flex; align-items:center; justify-content:center; text-align:center; padding:160px 6vw 80px; background-color:#000;">
-  <video autoplay muted loop playsinline preload="metadata" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0;">
+  <video id="hero-video" muted loop playsinline preload="none" data-autoplay style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0;">
     <source src="uploads/Web-Banner-Video.mp4" type="video/mp4">
+    <track kind="captions" src="uploads/hero-video.vtt" srclang="en" label="English">
   </video>
   <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(0,0,0,.55) 0%, rgba(0,0,0,.5) 40%, rgba(0,0,0,.82) 100%); z-index:1;"></div>
   <div style="position:absolute; inset:0; background:radial-gradient(ellipse 70% 60% at 50% 45%, transparent 0%, rgba(0,0,0,.45) 100%); pointer-events:none; z-index:1;"></div>
@@ -188,42 +189,42 @@
     <div data-grid="menu-photo" id="menu-track" style="display:flex; gap:5px; padding:0 5vw; overflow-x:auto; -webkit-overflow-scrolling:touch; scroll-snap-type:x mandatory; flex:1; min-width:0;">
 
       <a href="https://order.online/store/-35180447?hideModal=true" class="menu-photo-item">
-        <img src="uploads/menu/Caramel-Macchiato_3_2000px_72dpi.jpg" alt="Espresso Bar at Kiki Kafe" loading="lazy" width="2000" height="2000">
+        <img src="img/menu/caramel-macchiato-3-480.jpg" srcset="img/menu/caramel-macchiato-3-480.jpg 480w, img/menu/caramel-macchiato-3-800.jpg 800w" sizes="(max-width: 700px) 50vw, 300px" alt="Espresso Bar at Kiki Kafe" loading="lazy" decoding="async" width="2000" height="2000">
         <div class="menu-photo-overlay"><span>Espresso Bar</span><p>Lattes, cappuccinos & signature espresso drinks</p></div>
       </a>
 
       <a href="https://order.online/store/-35180447?hideModal=true" class="menu-photo-item">
-        <img src="uploads/menu/Matcha_Iced_2000px_72dpi.jpg" alt="Matcha at Kiki Kafe" loading="lazy" width="2000" height="2000">
+        <img src="img/menu/matcha-iced-480.jpg" srcset="img/menu/matcha-iced-480.jpg 480w, img/menu/matcha-iced-800.jpg 800w" sizes="(max-width: 700px) 50vw, 300px" alt="Matcha at Kiki Kafe" loading="lazy" decoding="async" width="2000" height="2000">
         <div class="menu-photo-overlay"><span>Matcha</span><p>Ceremonial-grade green tea lattes, iced or hot</p></div>
       </a>
 
       <a href="https://order.online/store/-35180447?hideModal=true" class="menu-photo-item">
-        <img src="uploads/menu/Refresher_Purpul-Haze_2000px_72dpi.jpg" alt="Refreshers at Kiki Kafe" loading="lazy" width="2000" height="2000">
+        <img src="img/menu/refresher-purpul-haze-480.jpg" srcset="img/menu/refresher-purpul-haze-480.jpg 480w, img/menu/refresher-purpul-haze-800.jpg 800w" sizes="(max-width: 700px) 50vw, 300px" alt="Refreshers at Kiki Kafe" loading="lazy" decoding="async" width="2000" height="2000">
         <div class="menu-photo-overlay"><span>Refreshers</span><p>Fruit-forward iced coolers, caffeine-free</p></div>
       </a>
 
       <a href="https://order.online/store/-35180447?hideModal=true" class="menu-photo-item">
-        <img src="uploads/menu/Red-Bull-Infusion_Strawberry-Vanilla_2000px_72dpi.jpg" alt="Red Bull Infusions at Kiki Kafe" loading="lazy" width="2000" height="2000">
+        <img src="img/menu/red-bull-infusion-strawberry-vanilla-480.jpg" srcset="img/menu/red-bull-infusion-strawberry-vanilla-480.jpg 480w, img/menu/red-bull-infusion-strawberry-vanilla-800.jpg 800w" sizes="(max-width: 700px) 50vw, 300px" alt="Red Bull Infusions at Kiki Kafe" loading="lazy" decoding="async" width="2000" height="2000">
         <div class="menu-photo-overlay"><span>Red Bull Infusions</span><p>Energy drinks mixed with fruit & bold flavors</p></div>
       </a>
 
       <a href="https://order.online/store/-35180447?hideModal=true" class="menu-photo-item">
-        <img src="uploads/menu/Sandwich_Mozz-Garden_2000px_72dpi.jpg" alt="Sandwiches at Kiki Kafe" loading="lazy" width="2000" height="2000">
+        <img src="img/menu/sandwich-mozz-garden-480.jpg" srcset="img/menu/sandwich-mozz-garden-480.jpg 480w, img/menu/sandwich-mozz-garden-800.jpg 800w" sizes="(max-width: 700px) 50vw, 300px" alt="Sandwiches at Kiki Kafe" loading="lazy" decoding="async" width="2000" height="2000">
         <div class="menu-photo-overlay"><span>Sandwiches</span><p>Fresh sandwiches on artisan bread, made to order</p></div>
       </a>
 
       <a href="https://order.online/store/-35180447?hideModal=true" class="menu-photo-item">
-        <img src="uploads/menu/Croissant_Nutella_2000px_72dpi.jpg" alt="Pastries at Kiki Kafe" loading="lazy" width="2000" height="2000">
+        <img src="img/menu/croissant-nutella-480.jpg" srcset="img/menu/croissant-nutella-480.jpg 480w, img/menu/croissant-nutella-800.jpg 800w" sizes="(max-width: 700px) 50vw, 300px" alt="Pastries at Kiki Kafe" loading="lazy" decoding="async" width="2000" height="2000">
         <div class="menu-photo-overlay"><span>Pastries</span><p>Croissants, danishes, bagels, scones & more</p></div>
       </a>
 
       <a href="https://order.online/store/-35180447?hideModal=true" class="menu-photo-item">
-        <img src="uploads/menu/Tirimisu_4_2000px_72dpi.jpg" alt="Desserts at Kiki Kafe" loading="lazy" width="2000" height="2000">
+        <img src="img/menu/tirimisu-4-480.jpg" srcset="img/menu/tirimisu-4-480.jpg 480w, img/menu/tirimisu-4-800.jpg 800w" sizes="(max-width: 700px) 50vw, 300px" alt="Desserts at Kiki Kafe" loading="lazy" decoding="async" width="2000" height="2000">
         <div class="menu-photo-overlay"><span>Desserts</span><p>Cheesecake, cake pops & indulgent sweet bites</p></div>
       </a>
 
       <a href="https://order.online/store/-35180447?hideModal=true" class="menu-photo-item">
-        <img src="uploads/menu/Acai-Bowl_Matcha_2000px_72dpi.jpg" alt="Acaí Bowls at Kiki Kafe" loading="lazy" width="2000" height="2000">
+        <img src="img/menu/acai-bowl-matcha-480.jpg" srcset="img/menu/acai-bowl-matcha-480.jpg 480w, img/menu/acai-bowl-matcha-800.jpg 800w" sizes="(max-width: 700px) 50vw, 300px" alt="Acaí Bowls at Kiki Kafe" loading="lazy" decoding="async" width="2000" height="2000">
         <div class="menu-photo-overlay"><span>Acaí Bowls</span><p>Fresh acaí topped with fruit, granola & more</p></div>
       </a>
 
@@ -360,10 +361,10 @@
         <img src="uploads/bring-kiki-to-you.svg" alt="Bring Kiki To You" style="width:100%; max-width:480px; height:auto; display:block; filter:brightness(0) invert(1);">
       </h2>
       <p style="margin:0; font-weight:300; font-size:16px; line-height:1.75; color:rgba(255,255,255,.6); max-width:460px;">The Kiki Kart brings our full barista experience anywhere you need it. From intimate weddings to corporate gatherings and private events, we craft premium espresso, lattes, and matcha on-site — turning any occasion into a moment worth remembering.</p>
-      <a href="book-kart.html" class="btn-primary" style="align-self:flex-start; margin-top:8px; text-decoration:none; background:#4d8145; color:#000; font-weight:500; font-size:13px; letter-spacing:.14em; text-transform:uppercase; padding:16px 34px; border:1px solid #4d8145; border-radius:1px;">Book the Kart</a>
+      <a href="/book-kart" class="btn-primary" style="align-self:flex-start; margin-top:8px; text-decoration:none; background:#4d8145; color:#000; font-weight:500; font-size:13px; letter-spacing:.14em; text-transform:uppercase; padding:16px 34px; border:1px solid #4d8145; border-radius:1px;">Book the Kart</a>
     </div>
     <div style="aspect-ratio:4/3; border:1px solid #333; border-radius:2px; overflow:hidden;">
-      <img src="uploads/kiki-kart.jpg" alt="The Kiki Kart serving coffee at an event" style="width:100%; height:100%; object-fit:cover; display:block;">
+      <img src="img/kiki-kart-home-1000.jpg" srcset="img/kiki-kart-home-600.jpg 600w, img/kiki-kart-home-1000.jpg 1000w" sizes="(max-width: 880px) 100vw, 50vw" width="1000" height="800" loading="lazy" decoding="async" alt="The Kiki Kart serving coffee at an event" style="width:100%; height:100%; object-fit:cover; display:block;">
     </div>
   </div>
 </section>
@@ -374,7 +375,7 @@
 
     <!-- Map -->
     <div class="reveal" style="border-radius:4px; overflow:hidden; box-shadow:0 4px 32px rgba(0,0,0,.12);">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d733.920300188347!2d-82.94839363821244!3d42.62571673192556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824dfda7caa2d97%3A0x6a7cdface83f5beb!2sKIKI%20KAF%C3%89!5e0!3m2!1sen!2sus!4v1784764868008!5m2!1sen!2sus" width="100%" height="440" style="display:block; border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      <iframe title="Map to Kiki Kafé at The Mall at Partridge Creek" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d733.920300188347!2d-82.94839363821244!3d42.62571673192556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824dfda7caa2d97%3A0x6a7cdface83f5beb!2sKIKI%20KAF%C3%89!5e0!3m2!1sen!2sus!4v1784764868008!5m2!1sen!2sus" width="100%" height="440" style="display:block; border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
     </div>
 
     <!-- Info -->
@@ -454,7 +455,7 @@
           <span class="faq-icon" style="font-size:22px; color:#4d8145; line-height:1;">+</span>
         </div>
         <div class="faq-answer">
-          <p style="margin:0; padding-top:14px; font-weight:300; font-size:15px; line-height:1.7; color:rgba(255,255,255,.6);">Absolutely. The Kiki Kart is available for weddings, corporate events, and private gatherings. <a href="book-kart.html" style="color:#4d8145; text-decoration:none;">Book the Kart</a> or call us at <a href="tel:+15863006994" style="color:#4d8145; text-decoration:none;">(586) 300-6994</a> to get started.</p>
+          <p style="margin:0; padding-top:14px; font-weight:300; font-size:15px; line-height:1.7; color:rgba(255,255,255,.6);">Absolutely. The Kiki Kart is available for weddings, corporate events, and private gatherings. <a href="/book-kart" style="color:#4d8145; text-decoration:none;">Book the Kart</a> or call us at <a href="tel:+15863006994" style="color:#4d8145; text-decoration:none;">(586) 300-6994</a> to get started.</p>
         </div>
       </div>
 
@@ -474,7 +475,7 @@
           <span class="faq-icon" style="font-size:22px; color:#4d8145; line-height:1;">+</span>
         </div>
         <div class="faq-answer">
-          <p style="margin:0; padding-top:14px; font-weight:300; font-size:15px; line-height:1.7; color:rgba(255,255,255,.6);">We're always looking for passionate people to join the team. <a href="apply.html" style="color:#4d8145; text-decoration:none;">Apply here</a> and we'll be in touch.</p>
+          <p style="margin:0; padding-top:14px; font-weight:300; font-size:15px; line-height:1.7; color:rgba(255,255,255,.6);">We're always looking for passionate people to join the team. <a href="/apply" style="color:#4d8145; text-decoration:none;">Apply here</a> and we'll be in touch.</p>
         </div>
       </div>
 
@@ -796,5 +797,10 @@
   })();
 </script>
 
+<script>
+window.addEventListener('load',function(){var v=document.getElementById('hero-video');if(!v)return;
+if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+setTimeout(function(){v.preload='auto';v.autoplay=true;var p=v.play();if(p&&p.catch)p.catch(function(){});},200);});
+</script>
 </body>
 </html>
