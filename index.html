@@ -7,6 +7,7 @@
 <link rel="icon" href="uploads/favicon.svg" type="image/svg+xml">
 <link rel="preload" as="font" type="font/woff2" href="fonts/Inter-var.woff2" crossorigin>
 <link rel="preload" as="image" href="uploads/meet-me-at-kiki.svg" fetchpriority="high">
+<link rel="preload" as="image" href="img/hero-still-portrait.jpg" media="(max-width: 760px)">
 <style id="kiki-fonts">@font-face{font-family:'Inter';font-style:normal;font-weight:300 700;font-display:swap;src:url(fonts/Inter-var.woff2) format('woff2')}</style>
 <link rel="stylesheet" href="styles.css">
 <meta name="description" content="Kiki Kafe is a premium coffee shop at The Mall at Partridge Creek in Clinton Township, MI. Handcrafted lattes, matcha, refreshers, pastries and more. Order online or visit us today.">
@@ -81,6 +82,7 @@
 
 
 <style id="kiki-hero">
+@media(max-width:760px){#hero-video{display:none}}
 .hero-ctas{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:14px;margin-top:14px}
 .hero-ghost{display:inline-flex;align-items:center;justify-content:center;min-width:200px;min-height:62px;padding:0 40px;border:1px solid rgba(255,255,255,.4);border-radius:1px;background:rgba(0,0,0,.25);color:#fff;text-decoration:none;font-weight:500;font-size:13px;letter-spacing:.14em;text-transform:uppercase;transition:border-color .25s,background .25s}
 .hero-ghost:hover{border-color:#fff;background:rgba(0,0,0,.5)}
@@ -149,6 +151,10 @@
 
 <!-- ===== HERO ===== -->
 <section id="top" style="position:relative; min-height:100vh; display:flex; align-items:center; justify-content:center; text-align:center; padding:160px 6vw 80px; background-color:#000;">
+  <picture>
+    <source media="(max-width: 760px)" srcset="img/hero-still-portrait.jpg" width="424" height="922">
+    <img src="img/hero-still-1600.jpg" width="1600" height="768" alt="" aria-hidden="true" fetchpriority="high" decoding="async" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0;">
+  </picture>
   <video id="hero-video" muted loop playsinline preload="none" data-autoplay style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0;">
     <source src="uploads/Web-Banner-Video.mp4" type="video/mp4">
     <track kind="captions" src="uploads/hero-video.vtt" srclang="en" label="English">
@@ -799,7 +805,7 @@
 
 <script>
 window.addEventListener('load',function(){var v=document.getElementById('hero-video');if(!v)return;
-if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+if(matchMedia('(prefers-reduced-motion: reduce)').matches||!matchMedia('(min-width: 761px)').matches)return;
 setTimeout(function(){v.preload='auto';v.autoplay=true;var p=v.play();if(p&&p.catch)p.catch(function(){});},200);});
 </script>
 </body>
